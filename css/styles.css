@@ -33,17 +33,17 @@ body {
   vertical-align: middle;
   transition: border-radius .25s ease-out .075s;
 }
-.bubble.left.cornered {
-  border-bottom-left-radius: 0;
+.bubble.rught.cornered {
+  border-bottom-right-radius: 0;
 }
-.bubble.left {
+.bubble.right {
   background: rgba(206,206,206,0.50);
 }
 .bubble:after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -.5rem;
+  right: -.5rem;
   width: .5rem;
   height: .5rem;
   background-image: url(../img/corner.svg);
