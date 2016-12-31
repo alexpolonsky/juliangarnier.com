@@ -16,19 +16,19 @@ window.onload = function() {
     var hours =  date.getHours();
     var minutes =  date.getMinutes();
     var current = hours + (minutes * .01);
-    if (current >= 5 && current < 19) return 'Have a nice day';
-    if (current >= 19 && current < 22) return 'Have a nice evening';
-    if (current >= 22 || current < 5) return 'Have a good night';
+    if (current >= 5 && current < 19) return 'יום נעים';
+    if (current >= 19 && current < 22) return 'ערב טוב';
+    if (current >= 22 || current < 5) return 'לילה טוב';
   }
 
   var messages = [
-    'Hey there 👋',
-    'I\'m Julian',
-    'I design and code things on the web',
-    'I\'m currently accepting freelance work.<br> You can contact me at <a href="mailto:hello@julian.gr">hello@julian.gr</a>',
+    'היי 👋',
+    'זה ניסיון',
+    'אני עושה דברים באינטרנט',
+    'כאן יש ירידת שורה<br> <a href="mailto:hellojulian.gr">hello@julian.gr</a>וכאן יש כתובת מייל',
     '<a target="_blank" href="https://twitter.com/juliangarnier">twitter.com/juliangarnier</a><br><a target="_blank" href="https://codepen.io/juliangarnier">codepen.io/juliangarnier</a><br><a target="_blank" href="https://github.com/juliangarnier">github.com/juliangarnier</a>',
     getCurrentTime(),
-    '👀 J.'
+    'ביי'
   ]
 
   var getFontSize = function() {
@@ -46,7 +46,7 @@ window.onload = function() {
     bubbleEl.classList.add('bubble');
     bubbleEl.classList.add('is-loading');
     bubbleEl.classList.add('cornered');
-    bubbleEl.classList.add(position === 'right' ? 'right' : 'left');
+    bubbleEl.classList.add(position === 'left' ? 'left' : 'right');
     messageEl.classList.add('message');
     loadingEl.classList.add('loading');
     messageEl.innerHTML = message;
