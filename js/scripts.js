@@ -101,7 +101,7 @@ window.onload = function() {
       targets: elements.bubble,
       width: ['0rem', dimensions.loading.w],
       marginTop: ['2.5rem', 0],
-      marginLeft: ['-2.5rem', 0],
+      marginRight: ['-2.5rem', 0],
       duration: 800,
       easing: 'easeOutElastic'
     });
@@ -153,7 +153,7 @@ window.onload = function() {
         width: [dimensions.loading.w, dimensions.bubble.w ],
         height: [dimensions.loading.h, dimensions.bubble.h ],
         marginTop: 0,
-        marginLeft: 0,
+        marginRight: 0,
         begin: function() {
           if (messageIndex < messages.length) elements.bubble.classList.remove('cornered');
         }
