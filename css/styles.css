@@ -33,7 +33,7 @@ body {
   vertical-align: middle;
   transition: border-radius .25s ease-out .075s;
 }
-.bubble.rught.cornered {
+.bubble.right.cornered {
   border-bottom-right-radius: 0;
 }
 .bubble.right {
